@@ -40,7 +40,7 @@ var Course = React.createClass({
 	renderForm: function () {
 		return (
 			<div className="row">			
-				<input type="text" lenght="30" className="form-control" ref="newText" defaultValue={this.props.children} />
+				<input type="text" className="form-control extra-inputtext" ref="newText" defaultValue={this.props.children} />
 				<button onClick={this.save} className="btn-success">Tallenna</button>
 			</div>
 		);
