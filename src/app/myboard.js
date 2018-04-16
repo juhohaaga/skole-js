@@ -40,8 +40,8 @@ var Course = React.createClass({
 	renderForm: function () {
 		return (
 			<div className="row">			
-				<textarea className="md-textarea form-control extra-owntextarea" ref="newText" defaultValue={this.props.children}></textarea>
-				<button onClick={this.save} className="btn-success">Save</button>
+				<input type="text" lenght="30" className="form-control" ref="newText" defaultValue={this.props.children} />
+				<button onClick={this.save} className="btn-success">Tallenna</button>
 			</div>
 		);
 	},
@@ -115,7 +115,7 @@ var Board = React.createClass({
 		return (
 			<div>
 				<div className="row">
-					<button onClick={this.add.bind(null, 'Course name or id')} className="btn-info create">Add</button>
+					<button onClick={this.add.bind(null, 'Course name or id')} className="btn-info create">Lisää uusi</button>
 				</div>
 			<div className="board">
 				<div className="row">
